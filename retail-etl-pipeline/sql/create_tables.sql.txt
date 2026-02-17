@@ -1,0 +1,10 @@
+CREATE TABLE sales (
+    date TEXT,
+    product TEXT,
+    category TEXT,
+    quantity INTEGER,
+    price REAL,
+    region TEXT,
+    revenue REAL
+);
+``

@@ -1,0 +1,13 @@
+import pandas as pd
+
+def transform_data(df):
+    """Clean data and compute revenue."""
+    df["revenue"] = df["quantity"] * df["price"]
+    df["date"] = pd.to_datetime(df["date"])
+    return df
+
+if __name__ == "__main__":
+    import extract
+    raw_df = extract.extract_data('../data/sales_raw.csv')
+    cleaned = transform_data(raw_df)
+    print(cleaned)

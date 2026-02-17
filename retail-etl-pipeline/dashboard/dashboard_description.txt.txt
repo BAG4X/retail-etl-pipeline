@@ -1,0 +1,19 @@
+Power BI Dashboard - Mock Design Description 
+
+Page 1: Executive Overview 
+- Total Revenue KPI
+- Total Units Sold KPI
+- Revenue Trend by Date (Line Chart)
+
+Page 2: Product Performance 
+- Revenue by Product (Bar Chart)
+- Revenue by Category (Bar Chart)
+- Top Products by Revenue (Table)
+
+Page 3: Regional Sales 
+- Revenue by Region (Bar Chart or Map)
+- Units Sold by Region
+
+Page 4: Daily Sales Explorer
+- Date slicer 
+- Revenue and Quantity by Day 

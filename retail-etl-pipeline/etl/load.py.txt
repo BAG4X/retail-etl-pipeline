@@ -1,0 +1,14 @@
+import sqlite3
+import extract
+import transform
+
+def load_to_sqlite(df, db_path="retail.db"):
+    conn = sqlite3.connect(db_path)
+    df.to_sql("sales", conn, if_exists="replace", index=False)
+    conn.close()
+
+if __name__ == "__main__":
+    raw_df = extract.extract_data("../data/sales_raw.csv")
+    cleaned = transform.transform_data(raw_df)
+    load_to_sqlite(cleaned)
+    print("Data successfully loaded into SQLite database.")

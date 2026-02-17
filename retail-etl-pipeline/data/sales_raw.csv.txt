@@ -1,0 +1,4 @@
+date,product,category,quantity,price,region
+2026-01-01,Phone,Electronics,3,500,North
+2026-01-02,Laptop,Electronics,1,1200,South
+2026-01-03,Headphones,Accessories,5,80,East

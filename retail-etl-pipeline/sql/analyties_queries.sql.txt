@@ -1,0 +1,13 @@
+-- Total revenue by category
+SELECT
+    category,
+    SUM(revenue) AS total_revenue
+FROM sales
+GROUP BY category;
+
+-- Total units sold by region
+SELECT
+    region,
+    SUM(quantity) AS total_units
+FROM sales
+GROUP BY region;
